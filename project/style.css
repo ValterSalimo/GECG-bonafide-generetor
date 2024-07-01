@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8dfe6;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: left;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Make the article occupy full width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+article:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Make the article occupy full width */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+ul.a {
+    list-style-type: square;
+}
+
+#dynamicContent {
+    border: 1px solid black;
+}
+
+img {
+    border-radius: 10px;
+    align-content: center;
+    transition: opacity 0.3s ease;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+h2 {
+    color: #343a40;
+    padding: 20px;
+    margin-top: 0;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    flex-direction: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    padding: 0 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.menu-bar {
+    background-color: #333;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar li {
+    display: -webkit-inline-box;
+}
+
+.menu-bar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 38%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.scontainer {
+    display: flex;
+    border-radius: 8px;
+}
+.scontainer:hover{
+    background-color: #666;
+    
+}
+#usefulLinksDropdown {
+    display: none;
+}
+.menu-bar li:hover .dropdown-menu {
+    display: block;
+}
+.about-section, .student-section {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+.about-section {
+    background-color: #d7d0ad; /* Yellow background */
+}
+.student-section {
+    background-color: #d7d0ad /* Orange background */
+}
+.about-section:hover {
+    background-color: #52504b; /* Yellow background */
+}
+.student-section:hover {
+    background-color: #52504b; /* Orange background */
+}
+.section-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.quote {
+    color: #fdd835; /* Yellow quotation marks */
+}
+.event-description {
+    margin-top: 20px;
+}
+.event-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+

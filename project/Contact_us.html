@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="GECG_logo.png" type="image/x-icon">
+<style>
+    article {
+            opacity: 0.5;
+        }
+        article:hover {
+            opacity: 1;
+        }
+        /* Additional styling for article content */
+        article h2 {
+            color: #fff; /* Text color for headings */
+        }
+
+        article p {
+            color: #fff; /* Text color for paragraph text */
+        }
+
+        /* Style for form elements */
+        form {
+            background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        form:hover {
+            background-color: grey;
+            padding: 20px;
+            border-radius: 10px;
+        }
+       
+       
+
+        /* Style for form input fields */
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for submit button */
+        form button[type="submit"] {
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      
+
+        /* Hover effect for submit button */
+        form button[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue background color on hover */}
+    article{
+        background-image: url('library_1.jpg'); /* Background image URL */
+            background-size: cover; /* Cover the entire element with the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            padding: 20px;
+            margin-bottom: 20px; /* Add some space between articles */
+            color: #fff; /* Text color on top of the background image */
+            border-radius: 12px;
+    }
+</style>
+</head>
+<body>
+    <header class="logo">
+        <img height="600" width="1350" src="GECG_logo.png" alt="logo">
+    
+        <h1 style="margin-left: 300px;">GOVERNMENT ENGINEERING COLLEGE,<br> GANDHINAGAR</h1>
+    
+    </header>
+    
+    <section class="menu-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://localhost/project/login.php">Login</a></li>
+            <li><a href="Contact_us.html">Contact us</a></li>
+            <link rel="shortcut icon" href="GECG_logo.png" type="image/x-icon">
+        </ul>
+    </section>
+    
+    <section class="content">
+        
+        <article><h1>Contact Us</h1>
+        <p>If you have any questions, feedback, or inquiries, please feel free to contact us using the form below or through our contact information.</p>
+        <form action="contact_form_handler.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Example@gmail.com"><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter you message here.........."></textarea><br><br>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+        <p><strong>You can also reach us through the following contact details:</strong></p>
+        <ul>
+            <li>Phone: <a href="tel:07923215965">07923215965</a></li>
+            <li>Email: <a href="gec-gnagar-dte@gujarat.gov.in">gec-gnagar-dte@gujarat.gov.in</a></li>
+            <li>Address:  Government Engineering College, Gandhinagar, Gujarat, India, Sector 28</li>
+        </ul>
+    </article>
+    </section>
+    
+    <footer>
+        <p>Have any questions?</p>
+    <p class="link"><a href="tel:07923215965">07923215965</a></p>
+    <p class="link"><a href="mailto:gec-gnagar-dte@gujarat.gov.in">gec-gnagar-dte@gujarat.gov.in</a></p>
+    </footer>
+</body>
+</html>
