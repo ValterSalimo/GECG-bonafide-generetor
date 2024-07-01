@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="GECG_logo.png" type="image/x-icon">
+    <title>Check Status</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="GECG_logo.png" alt="logo">
+        <h1 style="margin-left: 300px;">GOVERNMENT ENGINEERING COLLEGE,<br> GANDHINAGAR</h1>
+    </header>
+    <section class="menu-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="check_status.html">Check Status</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </section>
+    <article>
+        <h2>Check Status</h2>
+        <form action="check_status.php" method="post">
+            <label for="enrollment_number">Enter Enrollment Number:</label>
+            <input type="text" id="enrollment_number" name="enrollment_number" required>
+            <button type="submit">Check Status</button>
+        </form>
+    </article>
+</body>
+</html>

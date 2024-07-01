@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GECG_logo.png" type="image/x-icon">
+    <title>GEC Gandhinagar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .map {
+margin-left: 20px;
+margin-right: 20px;
+        }
+       img{
+            opacity: 0.6;
+        }
+        img:hover {
+            opacity: 1;
+        }
+        #img1 {
+            margin-left: 10px;
+            border-radius: 50%;
+            max-width: 300px;
+            max-height: max-content;
+        }
+
+        /* Style for the dropdown */
+        .dropdown {
+            position: relative;
+            display: block;
+            border-radius:5px;
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            transition: background-color 0.3s ease;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Style for the list items */
+        .dropdown-content li {
+            padding: 12px 16px;
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        /* Hover effect for the list items */
+        .dropdown-content li:hover {
+            background-color: #ddd;
+        }
+        button{
+            color:black
+        }
+    </style>
+</head>
+<body>
+
+
+<header class="logo">
+    <img height="600" width="1350" src="GECG_logo.png" alt="logo">
+
+    <h1 style="margin-left: 300px;">GOVERNMENT ENGINEERING COLLEGE,<br> GANDHINAGAR</h1>
+
+</header>
+<section class="menu-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="http://localhost/project/login.php">Login</a></li>
+        <li><a href="Contact_us.html">Contact us</a></li>
+        <li class="dropdown">
+            <button class="dropbtn">Useful Links</button>
+            <ul class="dropdown-content">
+                <li data-url="http://www.gecg28.ac.in/">Official Website</li>
+                <li data-url="https://dte.gujarat.gov.in/recruitment-rules">Recruitment Rules</li>
+                <li data-url="https://www.gtu.ac.in/">GTU</li> <br>
+                <li data-url="https://www.aicte-india.org/">AICTE</li><br>
+                <li data-url="https://www.nbaind.org">NBA</li><br>
+                <li data-url="https://dte.gujarat.gov.in/">CTE</li><br>
+                <li data-url="http://www.jacpcldce.ac.in/be.asp">ACPC</li><br>
+                <li data-url="https://gpsc.gujarat.gov.in/">GPSC</li><br>
+                <li data-url="https://financedepartment.gujarat.gov.in/rules.html">GCSR Rule</li>
+                <li data-url="./uploads/randr/Technical_Education_Institute_Manual.pdf">Technical Education Institute Manual</li>
+                <li data-url="./uploads/randr/Academic_Inspection_Manual.pdf">Academic Inspection Manual</li>
+                <li data-url="https://www.gturesults.in/">Check Results</li><br>
+            </ul>
+        </li>
+    </ul>
+</section>
+<br>
+<!---- <div id="dynamicContent"></div>-->
+
+<div id="img1"><img src="admin_1.jpg" alt=""></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var dropdown = document.querySelector('.dropdown');
+        var dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdown.addEventListener('click', function () {
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        dropdownContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'LI') {
+                var url = target.getAttribute('data-url');
+                if (url) {
+                    window.open(url, '_blank');
+                }
+            }
+        });
+    });
+
+    // Function to update the content of the div
+    function updateContent() {
+        // Example: Array of image URLs
+        var imageUrls = [
+            "gecg_dep1.jpeg",
+            "gecg_dep5.jpeg",
+            "gecg_ghostel.jpeg",
+            "Gecg_hostel.jpeg",
+            "Gecg_ran1.jpeg",
+            "admin_1.jpg",
+            // Add more image URLs as needed
+        ];
+
+        // Randomly select an image URL from the array
+        var randomIndex = Math.floor(Math.random() * imageUrls.length);
+        var randomImageUrl = imageUrls[randomIndex];
+
+        // Create an image element
+        var img = document.createElement("img");
+        img.src = randomImageUrl;
+
+        // Get the div where you want to display the image
+        var dynamicContentDiv = document.getElementById("dynamicContent");
+
+        // Clear previous content
+        dynamicContentDiv.innerHTML = "";
+
+        // Append the image to the div
+        dynamicContentDiv.appendChild(img);
+    }
+
+
+    // Call the function initially
+    updateContent();
+
+    // Call the function every 4 seconds
+    setInterval(updateContent, 4000);
+</script>
+
+
+<section class="content">
+    <article>
+        <h2>About</h2>
+        <p>Established in 2004, Government Engineering College, Gandhinagar (GEC-Gn) takes pride in its highly
+            motivated students. Our students are life-long assets that help this institute to continuously evolve
+            and work towards its Vision. Approved by AICTE. The College is administrated by Directorate of
+            Technical Education, Gujarat State, Gandhinagar. GEC Gn is affiliated to Gujarat Technological
+            University. GEC-Gn offers its students a wide range of courses to choose from. This helps them to
+            become multi-skilled personalities who can handle the challenges that industry and society will pose
+            before them as future engineers. Committed, to deliver excellence in everything that it does, our
+            institute works towards reducing the gap between industry and education. GEC-Gn endeavors to educate
+            its students in a manner that offers them an opportunity not only to excel in academics but to be
+            completely aware of their future industrial needs for professional expertise through innovative and
+            flexible curriculum. This trains the students of this campus to reach their highest potential. The
+            highly dedicated faculty members of GEC-Gn are experts in their professional fields. Their professional
+            skills and industry linkages help the students by grooming them to become competent engineers who will
+            contribute to the society and economy in the long run.
+
+        </p>
+
+
+    </article>
+
+    <article>
+        <h2>Vision</h2>
+
+        <p>To be a premier engineering institution, imparting quality education for innovative solutions relevant
+            to society and environment.</p>
+    </article>
+    <article>
+        <h2>Mission</h2>
+
+        <ul>
+            <li>
+                <P>To develop human potential to its fullest extent so that intellectual and innovative engineers
+                    can emerge in a wide range of professions.</P>
+            </li>
+            <li>
+                <P>To produce quality engineers, entrepreneurs and leaders to meet the present and future needs
+                    of society as well as environment.</P>
+            </li>
+
+        </ul>
+        </p>
+    </article>
+</section>
+
+<article>
+    <h2>Our Events:</h2>
+    <div class="scontainer">
+        <div class="about-section">
+
+            <div class="section-header">About Section
+                <p class="event-description">EXPERT TALK BY MR. MAYANK TRIVEDI<br>
+                    An Expert talk on “Career Opportunities after Engineering and How to face the interviews” was
+                    organised on 21st January 2020, by IC department and was conducted by Mr. Mayank Trivedi,
+                    Training Manager, GATE Forum, Ahmedabad.</p>
+            </div>
+            <img src="expert_2.png" alt="Expert Talk" class="event-photo">
+        </div>
+        <div class="student-section">
+            <div class="section-header">Student Section <span class="quote">"</span></div>
+            <img src="expert_1.png" alt="Student Section" class="event-photo">
+        </div>
+    </div>
+</article>
+<div class="map">
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1832.7939916675489!2d72.65453191932686!3d23.258075585098666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb1e6190bb175e32!2sGovernment%20Engineering%20College%2CGandhinagar!5e0!3m2!1sen!2sin!4v1597742702226!5m2!1sen!2sin"
+            width="100%" height="450" frameborder="0" style="border:2px solid black;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<footer>
+
+    <p>Have any questions?</p>
+    <p class="link"><a href="tel:07923215965">07923215965</a></p>
+    <p class="link"><a href="mailto:gec-gnagar-dte@gujarat.gov.in">gec-gnagar-dte@gujarat.gov.in</a></p>
+</footer>
+</body>
+</html>
